@@ -53,18 +53,18 @@ class App extends Component {
       <Slots>
        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"><img src={Bar}></img></button>
         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"><img src={BarTwo}></img></button>
-        <button><img src={BarThree}></img></button>
-        <button><img src={BarFour}></img></button>
-        <button><img src={BarFive}></img></button>
-        <button><img src={BarSix}></img></button>
-        <button><img src={BarSeven}></img></button>
-        <button><img src={BarEight}></img></button>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"><img src={BarThree}></img></button>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"><img src={BarFour}></img></button>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"><img src={BarFive}></img></button>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"><img src={BarSix}></img></button>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"><img src={BarSeven}></img></button>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"><img src={BarEight}></img></button>
       </Slots>
       <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Schedule Your Appointment</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
