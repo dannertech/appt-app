@@ -21,9 +21,13 @@ color: white;
 
 const StyledSubheader = styled.div`
 text-align: center;
-padding: 20px 0px 0px 0px;
+padding: 100px 0px 0px 0px;
 color: rgb(10,186,181);
 text-decoration: underline;
+`
+
+const Slots = styled.div`
+text-align: center;
 `
 
 class App extends Component {
@@ -36,9 +40,16 @@ class App extends Component {
       <StyledSubheader>
 <h3>Schedule Your Appointment</h3>
       </StyledSubheader>
-      <div>
+      <Slots>
         <img src={Bar}></img>
-      </div>
+        <img src={BarTwo}></img>
+        <img src={BarThree}></img>
+        <img src={BarFour}></img>
+        <img src={BarFive}></img>
+        <img src={BarSix}></img>
+        <img src={BarSeven}></img>
+        <img src={BarEight}></img>
+      </Slots>
       </div>
     );
   }
