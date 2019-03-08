@@ -1,5 +1,13 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import Bar from '../src/images/Bar.png';
+import BarTwo from '../src/images/Bar-two.png';
+import BarThree from '../src/images/Bar-three.png';
+import BarFour from '../src/images/Bar-four.png';
+import BarFive from '../src/images/Bar-five.png';
+import BarSix from '../src/images/Bar-six.png';
+import BarSeven from '../src/images/Bar-seven.png';
+import BarEight from '../src/images/Bar-eight.png';
 import './App.css';
 
 const StyledHeader = styled.div`
@@ -28,6 +36,9 @@ class App extends Component {
       <StyledSubheader>
 <h3>Schedule Your Appointment</h3>
       </StyledSubheader>
+      <div>
+        <img src={Bar}></img>
+      </div>
       </div>
     );
   }
