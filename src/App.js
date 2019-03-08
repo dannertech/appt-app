@@ -70,7 +70,17 @@ class App extends Component {
         </button>
       </div>
       <div class="modal-body">
-        ...
+        <form>
+          <h3>Name:</h3>
+          <br></br>
+          <input type="text" name="name"></input>
+          <br></br>
+          <h3>Phone Number:</h3>
+          <br></br>
+          <input type="text" name="number"></input>
+          <br></br>
+  
+        </form>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
