@@ -41,7 +41,47 @@ text-align: center;
 `
 
 class App extends Component {
+  constructor(props){
+    super(props);
+
+    this.state = {
+      slotOne: {
+        name : "",
+        number : 0
+      },
+      slotTwo: {
+        name: "",
+        number : 0,
+      },
+      slotThree: {
+        name: "",
+        number: 0
+      },
+      slotFour: {
+        name: "",
+        number: 0
+      },
+      slotFive: {
+        name: "",
+        number: 0
+      },
+      slotSix: {
+        name: "",
+        number: 0
+      },
+      slotSeven: {
+        name: "",
+        number: 0
+      },
+      slotEight: {
+        name: "",
+        number: 0
+      }
+    }
+  }
   render() {
+
+
     return (
       <div>
       <StyledHeader>
@@ -51,7 +91,7 @@ class App extends Component {
 <h3>Schedule Your Appointment</h3>
       </StyledSubheader>
       <Slots>
-       <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"><img src={Bar}></img></button>
+       <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" onClick={function(){ alert('clicked');}}><img src={Bar}></img></button>
         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"><img src={BarTwo}></img></button>
         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"><img src={BarThree}></img></button>
         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"><img src={BarFour}></img></button>
@@ -64,7 +104,7 @@ class App extends Component {
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Schedule Your Appointment</h5>
+        <h5 class="modal-title" id="exampleModalLabel">{this.state.slotOne.name}</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -84,7 +124,7 @@ class App extends Component {
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-primary" onClick={function(){ alert('clicked');}}>Save changes</button>
       </div>
     </div>
   </div>
