@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+//open slot images
 import Bar from '../src/images/Bar.png';
 import BarTwo from '../src/images/Bar-two.png';
 import BarThree from '../src/images/Bar-three.png';
@@ -8,6 +9,15 @@ import BarFive from '../src/images/Bar-five.png';
 import BarSix from '../src/images/Bar-six.png';
 import BarSeven from '../src/images/Bar-seven.png';
 import BarEight from '../src/images/Bar-eight.png';
+//closed slot images
+import RedBar from '../src/images/Red-bar.png';
+import RedBarTwo from '../src/images/Red-Bar-two.png';
+import RedBarThree from '../src/images/Red-Bar-three.png';
+import RedBarFour from '../src/images/Red-Bar-four.png';
+import RedBarFive from '../src/images/Red-Bar-six.png';
+import RedBarSix from '../src/images/Red-Bar-six.png';
+import RedBarSeven from '../src/images/Red-Bar-seven.png';
+import RedBarEight from '../src/images/Red-Bar-eight.png';
 import './App.css';
 
 const StyledHeader = styled.div`
