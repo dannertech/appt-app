@@ -44,6 +44,8 @@ class App extends Component {
   constructor(props){
     super(props);
 
+
+
     this.state = {
       slotOne: {
         name : "",
@@ -78,6 +80,19 @@ class App extends Component {
         number: 0
       }
     }
+
+    this.handleInputChange = this.handleInputChange.bind(this);
+  }
+
+  handleInputChange(event) {
+    const target = event.target;
+    const name = target.name;
+    const value = target.value;
+
+    this.setState({
+      [name]: value
+    })
+
   }
   render() {
 
@@ -91,7 +106,7 @@ class App extends Component {
 <h3>Schedule Your Appointment</h3>
       </StyledSubheader>
       <Slots>
-       <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" onClick={function(){ alert('clicked');}}><img src={Bar}></img></button>
+       <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"><img src={Bar}></img></button>
         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"><img src={BarTwo}></img></button>
         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"><img src={BarThree}></img></button>
         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"><img src={BarFour}></img></button>
@@ -104,7 +119,7 @@ class App extends Component {
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">{this.state.slotOne.name}</h5>
+        <h5 class="modal-title" id="bullshit">{this.state.slotOne.name}</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -113,11 +128,11 @@ class App extends Component {
         <form>
           <h3>Name:</h3>
           <br></br>
-          <input type="text" name="name"></input>
+          <input type="text" name="name" onChange={this.handleInputChange}></input>
           <br></br>
           <h3>Phone Number:</h3>
           <br></br>
-          <input type="text" name="number"></input>
+          <input type="text" name="number" onChange={this.handleInputChange}></input>
           <br></br>
   
         </form>
